@@ -95,6 +95,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
+alias config='/usr/bin/git --git-dir=/home/sacquer/.cfg/ --work-tree=/home/sacquer'
 
 xhost +local:root > /dev/null 2>&1
 
@@ -149,4 +150,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-alias config='/usr/bin/git --git-dir=/home/sacquer/.cfg/ --work-tree=/home/sacquer'
