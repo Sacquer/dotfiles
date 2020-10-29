@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+start_android_studio() {
+  cd ~/android-studio/bin
+  ./studio.sh
+}
+
+start_android_studio

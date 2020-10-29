@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+tmux new -s ruby-dev -n editor -d
+
+tmux send-keys -t ruby-dev 'cd ~/Documents/repos/playground/ruby/agile-web-development-with-rails-4/depot' Enter
+
+tmux send-keys -t ruby-dev 'nvim .' Enter
+
+tmux new-window -n console -t ruby-dev
+tmux send-keys -t ruby-dev:2 'cd ~/Documents/repos/playground/ruby/agile-web-development-with-rails-4/depot' Enter
+tmux send-keys -t ruby-dev:2 'docker-compose up' Enter
+
+tmux select-window -t ruby-dev:1
+
+tmux attach -t ruby-dev
+

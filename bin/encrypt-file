@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+declare filename=$1
+declare recipient=alkacirg@protonmail.com
+
+encrypt_file() {
+  gpg -r $recipient --output $(pwd)/$filename.md.gpg --encrypt $(pwd)/$filename.md
+
+  if [[ $? -eq 0 ]]; then
+    echo "Succesfully encrypted $filename.md"
+  else
+    echo "Return code: $?"
+  fi
+}
+
+encrypt_file

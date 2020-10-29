@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+xset r rate 190 35
+xset b off
