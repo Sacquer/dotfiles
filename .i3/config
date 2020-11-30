@@ -56,6 +56,9 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 ################################################################################################
 
+# Two monitor setup
+exec --no-startup-id xrandr --output DP1 --off --output DP2 --mode 2560x1440 --pos 2048x0 --rotate normal --output DP3 --off --output HDMI1 --off --output HDMI2 --off --output HDMI3 --mode 2048x1080 --pos 0x135 --rotate normal --output VGA1 --off --output VIRTUAL1 --off
+
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"

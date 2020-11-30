@@ -62,6 +62,7 @@ Plug 'mklabs/split-term.vim'
 " JSON stuff
 Plug 'elzr/vim-json'
 Plug 'XadillaX/json-formatter.vim'
+
 " Fuzzy Finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
