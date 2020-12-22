@@ -11,6 +11,7 @@ get_kbdlayout() {
 set_kbdlayout() {
   eval "array=($1)"
   setxkbmap "${array[@]}"
+  xmodmap ~/.Xmodmap
   pgrep i3status | xargs --no-run-if-empty kill -s USR1 # tell i3status to update
 }
 
