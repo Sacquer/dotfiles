@@ -48,6 +48,9 @@ source $HOME/.config/nvim/plug-config/vim-wiki.vim
 " emmet
 source $HOME/.config/nvim/plug-config/emmet.vim
 
+" vim-sneak
+source $HOME/.config/nvim/plug-config/vim-sneak.vim
+
 " vim-instant-markdown
 source $HOME/.config/nvim/plug-config/vim-instant-markdown.vim
 

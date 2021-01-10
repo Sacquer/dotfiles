@@ -49,6 +49,9 @@ Plug 'tpope/vim-fugitive'
 " vim-snippets
 Plug 'honza/vim-snippets'
 
+" vim-sneak
+Plug 'justinmk/vim-sneak'
+
 " vim-devicons
 Plug 'ryanoasis/vim-devicons'
 
